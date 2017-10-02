@@ -1,7 +1,6 @@
 ﻿using System;
-using validacoes.Interface;
 
-namespace validacoes.Comum
+namespace validacoes.Validation
 {
     public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
     {

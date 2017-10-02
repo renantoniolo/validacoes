@@ -1,5 +1,5 @@
 ﻿using System;
-namespace validacoes.Interface
+namespace validacoes.Validation
 {
     public interface IValidationRule<T>
     {

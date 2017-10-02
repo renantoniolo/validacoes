@@ -18,7 +18,7 @@ namespace validacoes.ViewModel
 				this.Notify(nameof(User));
 			}
 		}
-		*/
+        */
 
 		private string _senha;
 		public string Senha
