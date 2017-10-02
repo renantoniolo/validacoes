@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="validacoes.View.LoginPageView">
+	<ContentPage.Content>
+        <Grid>
+            
+            <StackLayout Margin="20">
+                
+                <Label 
+                    Text="Validações de Login"
+                    TextColor="Black"
+                    FontSize="24" 
+                    HorizontalTextAlignment="Center"
+                    Margin="25,0,20,0" />
+                
+                <Label Text="Usuário:"
+                    TextColor="Black"
+                    FontSize="12" 
+                    HorizontalTextAlignment="Start" 
+                    Margin="20,0,20,0" />
+                
+                 <Entry
+                    Placeholder="Entre com o usuário" 
+                    Text="{Binding User}"
+                    HorizontalTextAlignment="Start" 
+                    Margin="20,0,20,0" />
+                
+                 <Label 
+                    Text="Senha:"
+                    TextColor="Black"
+                    FontSize="12" 
+                    HorizontalTextAlignment="Start" 
+                    Margin="20,10,20,0" />
+                
+                 <Entry
+                    IsPassword="true"
+                    Text="{Binding Senha}"
+                    Placeholder="Entre com a senha" 
+                    HorizontalTextAlignment="Start" 
+                    Margin="20,0,20,0" />
+                
+                 <Button Text="Entrar" 
+                    BackgroundColor="#F6F6F6"
+                    TextColor="Black"
+                    Command="{Binding LoginCommand}" 
+                    IsEnabled="{Binding BtnEntrar}" 
+                    Margin="20,30,20,0" />
+                
+            </StackLayout>
+            
+        </Grid>
+        
+	</ContentPage.Content>
+    
+</ContentPage>
